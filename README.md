@@ -1,7 +1,7 @@
 # Overview
 During an assessment of the application’s administrative functionality, I identified a high-severity access control vulnerability caused by reliance on the HTTP Referer header for authorization. The system allowed role changes based on the presence of a specific Referer value rather than enforcing proper server-side checks. By forging the Referer header, a low-privileged user was able to escalate their privileges to administrator.
 
-# Steps Undertaken
+# Methodology
 
 Step 1: Logged in as an administrator to observe normal behavior for role promotion requests.
 
